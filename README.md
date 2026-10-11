@@ -1,59 +1,76 @@
 <div align="center">
-  <img src="assets/afk-motion.gif" alt="Animated orbital artwork. Leave the task. Keep the momentum. A Claude skill for clear ownership, careful work, and a handoff you can trust." width="100%">
 
-  <h1>niztal-afk</h1>
-  <p><strong>Leave the task. Keep the momentum.</strong></p>
-  <p>A Claude skill for work that should keep moving while you’re away.</p>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=2800&pause=900&color=FF5555&center=true&vCenter=true&width=720&height=55&lines=You+have+to+step+away.;The+work+keeps+moving.;niztal-afk+%E2%80%94+owner+mode." alt="You have to step away. The work keeps moving. niztal-afk — owner mode." />
 
-  <p>
-    <a href="https://github.com/NISTALTALSON/niztal-afk/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-9debd0?style=flat-square&labelColor=182330" alt="MIT License"></a>
-    <a href="https://github.com/NISTALTALSON/niztal-afk"><img src="https://img.shields.io/badge/format-.skill-9debd0?style=flat-square&labelColor=182330" alt="Portable skill bundle"></a>
-  </p>
+<br/>
+
+```text
+╭────────────────────────────────────────╮
+│  N I Z T A L   /   A F K               │
+│  AUTONOMOUS OWNER MODE                  │
+╰────────────────────────────────────────╯
+```
+
+**Hand off the outcome. Come back to a real handoff.**
+
+[![Stars](https://img.shields.io/github/stars/NISTALTALSON/niztal-afk?style=for-the-badge&color=FF5555&labelColor=1a1a1a)](https://github.com/NISTALTALSON/niztal-afk/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&labelColor=1a1a1a)](LICENSE)
+[![Claude Skill](https://img.shields.io/badge/Claude-Skill-orange?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=1a1a1a)](niztal-afk.skill)
+
+<br/>
+
+> *You leave for a meeting. The task shouldn't turn into a stack of questions waiting for you when you get back.*
+>
+> **niztal-afk is built for that gap.**
+
 </div>
 
-<br>
+---
 
-> **The idea:** hand over the outcome, not a queue of questions. Come back to finished work, a clear record of what happened, and only the decisions that truly need you.
+## ⚡ What it does
 
-## What it is
+`niztal-afk` is a portable Claude skill bundle for **away-from-keyboard work**. It takes a task someone has handed over, sets a concrete finish line, works with the tools and context available, verifies the result, and leaves a short report.
 
-`niztal-afk` is a portable Claude skill bundle for **away-from-keyboard work**. It gives an agent a practical way to take ownership of a handed-off task: define what done means, inspect the tools and context that are actually available, make sensible reversible choices, and return with a useful result.
+| Move | What happens |
+|---|---|
+| 🎯 **FRAME** | Turn the handoff into a checkable definition of done |
+| 🧭 **INSPECT** | Find the tools, project context, and constraints that are actually available |
+| 🛠️ **DO** | Make sensible, reversible decisions and carry the work forward |
+| ✅ **VERIFY** | Check the result before calling it finished |
+| 📨 **HAND BACK** | Share what’s done, what was checked, and anything that truly needs you |
 
-This repository contains the distributable `.skill` archive and its license. It is a prompt-and-reference package, not an application; there is no runtime, package manager, or build step.
+## 🕒 When to use it
 
-## Bring it along
+When you’re stepping away, busy, or want an agent to take a task end to end:
 
-Download [`niztal-afk.skill`](./niztal-afk.skill) and import it into a Claude environment that supports skill bundles. The archive includes the skill instructions and its reference guides in one file.
+```text
+“I’m away for a while. Take this through to a finished result
+and leave me a short handoff.”
+```
 
-## When to reach for it
+It’s designed to make progress on everyday choices without turning each one into a question. Missing access, failed checks, and human decisions are called out clearly so the rest of the work can still move.
 
-Use it when you’re stepping away, tied up, or simply want the task handled end to end. For example:
+## 📦 Install
 
-> “I’m away for a while. Take this through to a finished result and leave me a short handoff.”
+Download [`niztal-afk.skill`](./niztal-afk.skill) and import it into a Claude environment that supports skill bundles. The archive carries the instructions and reference guides together; there’s no app to build or runtime to install.
 
-The skill turns that handoff into a concrete finish line, then works through it:
+## 🧾 The handoff
 
-**Frame the outcome → inspect the available tools → do the work → verify it → hand it back.**
-
-It favors progress on routine, reversible choices. If access is missing, a check fails, or a decision crosses a human boundary, it should say so plainly and keep going on the parts it can complete.
-
-## A good handoff, in a minute
-
-The bundled report template keeps the return brief and useful:
+The bundled report template puts the useful parts first:
 
 | | |
-|:--|:--|
-| **Done** | The result and where to find it |
+|---|---|
+| **Done** | What exists and where to find it |
 | **Verified** | Checks actually run and their results |
 | **Decisions** | Assumptions made, why, and how to undo them |
-| **Needs you** | Only real approvals, access gaps, or human calls |
+| **Needs you** | Real approvals, access gaps, or human calls |
 | **Next step** | One follow-up, if there is one |
 
-## Built around trust
+## 🛡️ Guardrails
 
-The operating guidance pairs autonomy with clear limits. It calls for evidence before claiming something is verified, protects secrets and original data, and leaves spending, account security changes, high-impact decisions, and messages sent as the user with the person who owns them. A blocked push or missing permission is reported as a boundary, never treated as a puzzle to bypass.
+Autonomy has edges. The skill protects secrets and original data; it does not treat a missing permission as something to bypass. Spending, account security changes, high-impact decisions, and messages sent as the user remain with the person who owns them.
 
-## Inside the bundle
+## 🗂️ Inside the bundle
 
 ```text
 niztal-afk.skill
@@ -65,8 +82,8 @@ niztal-afk.skill
         └── handoff-report.md
 ```
 
-The archive is the source of those files; they are not duplicated as loose repository files. The guides cover capability discovery, repository delivery, and the final handoff format.
+The `.skill` archive is the source for these files; they aren’t duplicated as loose files in this repository. The references cover capability discovery, GitHub workflow, and the final handoff.
 
-## License
+## 📄 License
 
 [MIT](./LICENSE)
