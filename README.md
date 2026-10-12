@@ -21,7 +21,7 @@
 
 > *You leave for a meeting. The task shouldn't turn into a stack of questions waiting for you when you get back.*
 >
-> **niztal-afk is built for that gap.**
+> **niztal-afk is built for that gap..**
 
 </div>
 
